@@ -11,7 +11,7 @@ for line in file:
         spisok.append(int(line))
         spisok.sort()
     if len(spisok)==1:
-        print("Нет потерянных пакетов!")
+        print("No lost packages!")
     else:
-        print("Потерянные пакеты:")
+        print("Lost packages:")
         print(setter.symmetric_difference(range(spisok[0],spisok[len(spisok)-1]+1)))
