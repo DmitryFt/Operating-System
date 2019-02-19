@@ -3,9 +3,11 @@ import re
 setter = set()
 spisok = []
 
-f = open('C://packages.txt') #C://
-file = re.findall(r'\d+', text)
-for line in file:
+file = open('C:\\packages.txt')
+text = file.read()
+data = re.findall(r'\d+', text)
+
+for line in data:
     setter.add(int(line))
     if line not in spisok:
         spisok.append(int(line))
