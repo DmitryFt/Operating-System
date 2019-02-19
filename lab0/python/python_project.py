@@ -5,9 +5,9 @@ spisok = []
 
 file = open('C:\\packages.txt')
 text = file.read()
-data = re.findall(r'\d+', text)
+file_data = re.findall(r'\d+', text)
 
-for line in data:
+for line in file_data:
     setter.add(int(line))
     if line not in spisok:
         spisok.append(int(line))
